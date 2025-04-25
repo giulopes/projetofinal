@@ -62,7 +62,7 @@ section {
 .display-5 {
     font-family: 'Lemon', serif; /* Mantendo a fonte Lemon */
     font-size: 3.5rem; /* Ajustando o tamanho da fonte do título */
-    color: rgb(0, 0, 0); /* Definindo a cor do título como laranja */
+    color: var(--laranja-claro); /* Definindo a cor do título como laranja */
     text-shadow: -2px 2px #333; /* Adicionando uma sombra sutil para legibilidade */
     margin-bottom: 1rem; /* Espaçamento abaixo do título */
     line-height: 1.2;
