@@ -1,65 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
-
-:root {
-    --cor-primaria: #A84448; /* Um tom de vermelho/terra para o Modernismo */
-    --cor-secundaria: #E8A3A3; /* Um tom mais claro para detalhes */
-    --cor-destaque: #F2D7D5; /* Um tom bem claro para fundos e acentos */
-    --fonte-principal: 'Montserrat', sans-serif;
-    --fonte-titulos: 'Lemon', serif;
-}
-
-body {
-    font-size: 1rem;
-    font-family: var(--fonte-principal);
-    color: #333;
-    background-color: var(--cor-destaque);
-}
-
-header {
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-section {
-    padding-bottom: 5rem;
-}
-
-.nav-link {
-    color: var(--cor-primaria);
-    font-weight: 600;
-    transition: color 0.3s ease;
-}
-
-.nav-link:hover {
-    color: #555;
-}
-
-.nav-img {
-    max-height: 80px;
-}
-
-.inicio-fundo {
-    background-image: url('img/fundo_modernismo.jpg'); /* Substitua pela sua imagem de fundo */
-    background-size: cover;
-    background-position: center;
-    border-radius: 20px;
-    width: 100%;
-    height: 500px;
-    padding: 40px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.img-inicio {
-    max-width: 45%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-}
-
 .esquerda-conteudo {
     display: flex;
     flex-direction: column;
@@ -75,121 +13,143 @@ section {
     padding: 1em 2em;
     font-weight: bold;
     transition: background-color 0.3s ease;
+    display: inline-block; /* Para que a largura seja baseada no conteúdo */
 }
 
-.botao-inicio:hover {
+.botao-inicio:hover,
+.botao-inicio:focus {
     background-color: #802e31;
+    outline: none;
 }
 
 .display-4 {
     color: white;
     text-shadow: 2px 2px var(--cor-secundaria);
+    font-size: 2.5rem; /* Ajustando o tamanho da fonte */
+}
+
+@media (min-width: 768px) {
+    .display-4 {
+        font-size: 3.5rem;
+    }
 }
 
 #modernismo {
-    padding-top: 5rem;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    padding-top: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     background: url('img/detalhe_modernismo_1.png') top left no-repeat, url('img/detalhe_modernismo_2.png') bottom right no-repeat;
-    background-size: 150px;
+    background-size: 100px; /* Reduzindo o tamanho dos detalhes */
 }
 
 #modernismo .container {
     z-index: 1;
     position: relative;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 2rem;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgba(249, 235, 234, 0.8); /* Cor de fundo levemente transparente */
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
     font-family: var(--fonte-titulos);
-    font-size: 2.5em;
+    font-size: 2.2rem;
     color: var(--cor-primaria);
     text-align: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 h3 {
     color: var(--cor-primaria);
     font-family: var(--fonte-titulos);
-    font-size: 1.8em;
+    font-size: 1.6rem;
     margin-top: 1rem;
 }
 
-#artistas {
+#galeria {
     background-color: var(--cor-secundaria);
-    padding: 3rem 0;
+    padding: 2rem 0;
 }
 
-.fundo-artistas {
-    padding: 2rem;
-    border-radius: 15px;
-    background-color: rgba(255, 255, 255, 0.7);
-}
-
-.artista-img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border: 5px solid white;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-#obras {
-    background-color: var(--cor-destaque);
-    padding: 3rem 0;
-}
-
-.fundo-obras {
-    padding: 2rem;
-    border-radius: 15px;
+.fundo-galeria {
+    padding: 1.5rem;
+    border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.7);
 }
 
 .obra-img {
     max-width: 100%;
     height: auto;
-    border-radius: 10px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
+    margin-bottom: 1rem;
 }
 
 #contato {
-    background-image: url('img/fundo_contato_modernismo.jpg'); /* Substitua pela sua imagem de fundo de contato */
+    background-image: url('img/fundo_contato_modernismo.jpg');
     background-size: cover;
     background-position: center;
-    padding: 4rem 0;
+    padding: 3rem 0;
 }
 
 .formulario {
     background-color: rgba(255, 255, 255, 0.9);
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
     font-weight: bold;
 }
 
-.formulario button {
-    background-color: var(--cor-primaria);
-    border: none;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
+.formulario label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--cor-texto-secundario);
 }
 
-.formulario button:hover {
-    background-color: #802e31;
-}
-
-.form-control {
-    background-color: #f8f8f8;
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
     border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    box-sizing: border-box; /* Para que padding não aumente a largura */
+}
+
+.formulario textarea {
+    resize: vertical; /* Permite redimensionar verticalmente */
+}
+
+.formulario button[type="submit"] {
+    background-color: var(--cor-primaria);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Ocupar a largura total em telas menores */
+}
+
+@media (min-width: 576px) {
+    .formulario button[type="submit"] {
+        width: auto; /* Largura automática em telas maiores */
+    }
+}
+
+.formulario button[type="submit"]:hover,
+.formulario button[type="submit"]:focus {
+    background-color: #802e31;
+    outline: none;
 }
 
 .menu-acessibilidade {
     position: fixed;
-    top: 2rem;
-    right: 20px;
+    top: 1rem;
+    right: 1rem;
     z-index: 1000;
 }
 
@@ -200,25 +160,27 @@ h3 {
 }
 
 .opcoes-acessibilidade {
-    margin-top: 10px;
+    margin-top: 0.5rem;
     display: flex;
     flex-direction: column;
 }
 
 .opcoes-acessibilidade button {
-    margin-bottom: 5px;
+    margin-bottom: 0.3rem;
     background-color: var(--cor-primaria);
     color: white;
     border: none;
-    padding: 0.5em 1em;
+    padding: 0.4rem 0.8rem;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     transition: background-color 0.3s ease;
 }
 
-.opcoes-acessibilidade button:hover {
+.opcoes-acessibilidade button:hover,
+.opcoes-acessibilidade button:focus {
     background-color: #802e31;
+    outline: none;
 }
 
 .apresenta-lista {
@@ -227,18 +189,82 @@ h3 {
 
 footer {
     background-color: #f8f8f8;
-    color: #555;
-    padding: 1rem 0;
+    color: var(--cor-texto-secundario);
+    padding: 1.5rem 0;
     margin-top: 2rem;
     border-top: 1px solid #eee;
+    text-align: center;
 }
 
 footer p {
     margin-bottom: 0.5rem;
+    font-size: 0.9rem;
 }
 
-footer i {
-    font-size: 1.5rem;
-    margin: 0 0.5rem;
+footer a {
     color: var(--cor-primaria);
+    font-size: 1.2rem;
+    margin: 0 0.5rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover,
+footer a:focus {
+    color: #802e31;
+    outline: none;
+}
+
+/* Estilos para rolagem suave */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Estilos responsivos */
+@media (max-width: 767px) {
+    .nav ul {
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    .nav li {
+        margin-bottom: 0.5rem;
+    }
+
+    .nav-img {
+        max-height: 50px;
+    }
+
+    .inicio-fundo {
+        padding: 20px;
+    }
+
+    .img-inicio {
+        max-width: 80%;
+    }
+
+    .esquerda-conteudo {
+        align-items: center;
+        text-align: center;
+    }
+
+    .display-4 {
+        font-size: 2rem;
+    }
+
+    #modernismo .container {
+        padding: 1rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .fundo-galeria {
+        padding: 1rem;
+    }
+
+    .formulario {
+        padding: 1rem;
+    }
 }
