@@ -46,6 +46,17 @@ section {
     position: relative; /* Para posicionar a imagem */
 }
 
+
+.inicio-conteudo-wrapper {
+    background-image: url('img/sua_imagem_modernista.png'); /* Substitua pelo nome do seu arquivo de imagem */
+    background-size: cover; /* Para cobrir todo o elemento */
+    background-position: center; /* Para centralizar a imagem */
+    color: white; /* Garante que o texto fique legível sobre a imagem */
+    padding: 2rem; /* Adicione um pouco de padding para o texto não ficar colado nas bordas */
+    border-radius: 10px; /* Opcional: se quiser bordas arredondadas no fundo */
+    /* Outros estilos que você queira para o container do conteúdo */
+}
+
 .esquerda-conteudo {
     display: flex;
     flex-direction: column;
