@@ -76,7 +76,6 @@ section {
     margin-bottom: 2rem; /* Mantendo o espaçamento abaixo */
     font-size: 1.2rem; /* Mantendo o tamanho da fonte */
     font-weight: 400; /* Mantendo a espessura da fonte */
-    background-color: rgba(255, 255, 255, 0.1); /* Mantendo o fundo semi-transparente (remova se não quiser) */
     padding: 0.5rem; /* Mantendo o padding */
     border-radius: 5px; /* Mantendo o arredondamento da borda */
     text-align: center; /* Adicionando a centralização do texto */
