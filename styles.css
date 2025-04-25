@@ -83,7 +83,7 @@ section {
 
 .btn-primary {
     background-color: var(--laranja-claro);
-    color: white; /* Mantendo a cor do texto do botão como branco */
+    color: rgb(0, 0, 0); /* Mantendo a cor do texto do botão como branco */
     border: none;
     padding: 1rem 2rem;
     border-radius: 30px;
@@ -118,7 +118,7 @@ section {
 #modernismo-explicacao p {
     line-height: 1.8;
     color: #555;
-    font-size: 1.1rem;
+    /* A linha font-size: 1.1rem; foi removida para permitir a herança do body */
 }
 
 /* Estilos para a seção de Artistas */
