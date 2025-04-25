@@ -1,44 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+
 :root {
-    --cor-principal: #E8D8C3;
-    --cor-secundaria: #CB6D43;
+    --laranja-claro: #FF862A;
 }
 
 body {
+    font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
 }
 
 header {
-    background-color: #1D1D1D;
+    background-color: #ffffff;
+}
+
+section {
+    padding-bottom: 5rem;
 }
 
 .nav-link {
-    color: var(--cor-secundaria);
+    color: #CB6D43;
     font-weight: 600;
 }
 
 .inicio-fundo {
-    background-image: url('img/daisy-banner.jpg');
+    background-image: url('img/4965007.jpg'); /* Substitua pelo caminho da sua imagem */
     background-size: cover;
-    background-position: center;
-    border-radius: 10px;
+    background-position: right;
+    border-radius: 80px;
+    width: 100%;
+    height: 606px;
     padding: 40px;
     margin: 0 auto;
-    height: 500px;
 }
 
 .img-inicio {
     position: absolute;
     right: 0;
-    top: 10rem;
-    width: 35rem;
+    top: 18rem;
+    width: 45rem;
+    height: auto;
+}
+
+.esquerda-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.botao-inicio {
+    background-color: var(--laranja-claro);
+    border-radius: 30px;
+    border: none;
+    width: 14em;
+    height: 3em;
+    align-content: center;
+}
+
+.display-4 {
+    text-shadow: -5px 5px var(--laranja-claro);
+}
+
+#artistas {
+    background-color: #FAF4F4;
+    padding: 3rem 0;
+}
+
+.artista {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-family: 'Lemon', serif;
+    font-size: 2.5em;
+    font-style: normal;
+    color: var(--laranja-claro);
 }
 
 #galeria {
-    background-color: #F0F0F0;
+    background-color: #FAF4F4;
+}
+
+.fundo-galeria {
+    background: url('img/flor-bottom-direita.png') bottom right no-repeat;
+    background-size: 180px 180px;
 }
 
 #contato {
-    background-color: #1D1D1D;
+    background-image: url('img/4965007.jpg');
+    background-size: cover;
     padding: 4rem 0;
 }
 
@@ -47,14 +98,41 @@ header {
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
 }
 
 .formulario button {
-    background-color: var(--cor-secundaria);
+    background-color: #CB6D43;
     border: none;
     font-weight: bold;
 }
 
 .form-control {
     background-color: #F1EDEF;
+}
+
+.menu-acessibilidade {
+    position: fixed;
+    top: 2rem;
+    right: 20px;
+    z-index: 1000;
+}
+
+.rotacao-botao {
+    transform: rotate(-90deg);
+    transform-origin: right center;
+}
+
+.opcoes-acessibilidade {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.opcoes-acessibilidade button {
+    margin-bottom: 5px;
+}
+
+.apresenta-lista {
+    display: none;
 }
