@@ -19,6 +19,12 @@ header {
     box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.05); /* Adicionando uma leve sombra */
 }
 
+header nav a span.text-primary {
+    color: var(--laranja-claro) !important; /* Usando a variável laranja e !important para garantir a prioridade */
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
 nav .nav-link {
     color: #CB6D43; /* Cor dos links de navegação */
     font-weight: 600; /* Links em negrito */
@@ -45,7 +51,7 @@ section {
     padding-top: 10rem; /* Aumentando o padding superior para dar mais espaço */
     padding-bottom: 10rem; /* Aumentando o padding inferior para dar mais espaço */
     border-radius: 10px; /* Mantendo ou ajustando o arredondamento da borda */
-    text-align: center; /* Centralizando o conteúdo dentro da seção */
+    text-align: center; /* Centralizando o texto */
     display: flex;
     flex-direction: column;
     justify-content: center; /* Centralizar verticalmente os itens */
@@ -60,6 +66,9 @@ section {
     text-shadow: -2px 2px #333; /* Adicionando uma sombra sutil para legibilidade */
     margin-bottom: 1rem; /* Espaçamento abaixo do título */
     line-height: 1.2;
+    background-color: rgba(255, 255, 255, 0.1); /* Adicionando uma camada semi-transparente opcional para melhorar a legibilidade do texto sobre a imagem */
+    padding: 1rem; /* Adicionando um pouco de padding ao redor do título */
+    border-radius: 5px; /* Adicionando um pequeno arredondamento opcional */
 }
 
 .fs-4 {
@@ -67,6 +76,9 @@ section {
     margin-bottom: 2rem; /* Espaçamento abaixo do parágrafo */
     font-size: 1.2rem;
     font-weight: 400;
+    background-color: rgba(255, 255, 255, 0.1); /* Adicionando uma camada semi-transparente opcional para melhorar a legibilidade do texto sobre a imagem */
+    padding: 0.5rem; /* Adicionando um pouco de padding ao redor do parágrafo */
+    border-radius: 5px; /* Adicionando um pequeno arredondamento opcional */
 }
 
 .btn-primary {
