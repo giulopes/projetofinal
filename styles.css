@@ -8,11 +8,15 @@
 body {
     font-size: 1rem;
     font-family: 'Montserrat', sans-serif; /* Fonte principal Montserrat */
+    color: #333; /* Cor do texto padrão */
+    background-color: #f8f9fa; /* Cor de fundo padrão do body */
+    line-height: 1.6;
 }
 
 header {
     background-color: #ffffff; /* Fundo branco para o cabeçalho */
     padding: 1rem 0; /* Adicionando um pouco de padding vertical */
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.05); /* Adicionando uma leve sombra */
 }
 
 nav .nav-link {
@@ -20,6 +24,7 @@ nav .nav-link {
     font-weight: 600; /* Links em negrito */
     transition: color 0.3s ease; /* Transição suave na cor ao passar o mouse */
     padding: 0.5rem 1rem; /* Adicionando padding aos links */
+    text-decoration: none; /* Removendo sublinhado padrão dos links */
 }
 
 nav .nav-link:hover {
@@ -27,191 +32,146 @@ nav .nav-link:hover {
 }
 
 section {
-    padding-bottom: 5rem; /* Espaçamento inferior padrão para as seções */
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
 /* Estilos para a seção de Início */
 #inicio {
-    background-image: url('img/4965007.jpg'); /* Imagem de fundo */
-    background-size: cover; /* Cobrir todo o espaço */
-    background-position: right center; /* Imagem alinhada à direita e verticalmente centralizada */
-    border-radius: 80px; /* Borda arredondada */
-    width: 100%;
-    height: 606px;
-    padding: 40px;
-    margin: 2rem auto 0; /* Adicionando margem superior */
-    display: flex;
-    align-items: center; /* Alinhar itens verticalmente */
-    justify-content: flex-start; /* Alinhar conteúdo à esquerda */
-    position: relative; /* Para posicionar a imagem */
-}
-
-
-.inicio-conteudo-wrapper {
-    background-image: url('img/fundo.jpg'); /* Substitua pelo nome do seu arquivo de imagem */
-    background-size: cover; /* Para cobrir todo o elemento */
-    background-position: center; /* Para centralizar a imagem */
-    color: white; /* Garante que o texto fique legível sobre a imagem */
-    padding: 2rem; /* Adicione um pouco de padding para o texto não ficar colado nas bordas */
-    border-radius: 10px; /* Opcional: se quiser bordas arredondadas no fundo */
-    /* Outros estilos que você queira para o container do conteúdo */
-}
-
-.esquerda-conteudo {
+    background-image: url('img/sua_imagem_modernista.png'); /* Substitua pelo nome do seu arquivo de imagem */
+    background-size: cover; /* Cobrir todo o espaço da seção */
+    background-position: center; /* Centralizar a imagem */
+    color: white; /* Cor padrão do texto dentro da seção (pode ser sobrescrita) */
+    padding-top: 10rem; /* Aumentando o padding superior para dar mais espaço */
+    padding-bottom: 10rem; /* Aumentando o padding inferior para dar mais espaço */
+    border-radius: 10px; /* Mantendo ou ajustando o arredondamento da borda */
+    text-align: center; /* Centralizando o conteúdo dentro da seção */
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
-    z-index: 1; /* Garante que o texto fique acima da imagem de fundo */
+    justify-content: center; /* Centralizar verticalmente os itens */
+    align-items: center; /* Centralizar horizontalmente os itens */
+    margin-bottom: 2rem; /* Adicionando margem inferior para separar da próxima seção */
 }
 
-.img-inicio {
-    position: absolute;
-    right: 2rem; /* Ajustando a distância da direita */
-    top: 50%; /* Centralizando verticalmente */
-    transform: translateY(-50%); /* Ajuste fino do alinhamento vertical */
-    width: 40rem; /* Reduzindo um pouco a largura */
-    height: auto;
-    border-radius: 10px; /* Adicionando um pouco de arredondamento na imagem */
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Adicionando uma sombra suave */
+.display-5 {
+    font-family: 'Lemon', serif; /* Mantendo a fonte Lemon */
+    font-size: 3.5rem; /* Ajustando o tamanho da fonte do título */
+    color: var(--laranja-claro); /* Definindo a cor do título como laranja */
+    text-shadow: -2px 2px #333; /* Adicionando uma sombra sutil para legibilidade */
+    margin-bottom: 1rem; /* Espaçamento abaixo do título */
+    line-height: 1.2;
 }
 
-.botao-inicio {
+.fs-4 {
+    color: white; /* Mantendo a cor do parágrafo como branco (ajuste se necessário) */
+    margin-bottom: 2rem; /* Espaçamento abaixo do parágrafo */
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.btn-primary {
     background-color: var(--laranja-claro);
-    color: white; /* Texto branco no botão */
-    border-radius: 30px;
+    color: white; /* Mantendo a cor do texto do botão como branco */
     border: none;
-    padding: 1em 2em; /* Aumentando um pouco o padding */
+    padding: 1rem 2rem;
+    border-radius: 30px;
     font-weight: bold;
-    cursor: pointer; /* Mudar o cursor ao passar por cima */
-    transition: background-color 0.3s ease; /* Transição suave na cor do fundo */
+    text-decoration: none;
+    transition: background-color 0.3s ease;
 }
 
-.botao-inicio:hover {
-    background-color: #E67724; /* Tom mais escuro de laranja no hover */
+.btn-primary:hover {
+    background-color: #E67724;
 }
 
-.display-4 {
-    font-family: 'Lemon', serif; /* Usando a fonte Lemon para títulos grandes */
-    font-size: 3rem; /* Aumentando o tamanho da fonte */
-    color: #333; /* Cor do texto */
-    text-shadow: -3px 3px var(--laranja-claro); /* Ajustando a sombra */
-    line-height: 1.2; /* Melhorando a legibilidade */
-}
-
-/* Estilos para a seção Tropicalia (O que foi o Modernismo?) */
+/* Estilos para a seção "O que foi o Modernismo?" */
 #modernismo-explicacao {
-    position: relative;
-    padding-top: 5rem;
-    padding-bottom: 5rem; /* Adicionando padding inferior também */
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    background-image: url('img/flor.png'), url('img/flor-esquerda.png');
-    background-position: top right, bottom left;
-    background-repeat: no-repeat, no-repeat;
-    background-size: 150px, 150px; /* Ajustando o tamanho das flores */
+    background-color: #f8f9fa; /* Cor de fundo para a seção */
 }
 
 #modernismo-explicacao .container {
-    position: relative;
-    z-index: 1; /* Garante que o texto fique acima das flores */
-    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco semi-transparente para o texto */
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 3rem;
+    border-radius: 8px;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.05);
 }
 
 #modernismo-explicacao h2 {
     font-family: 'Lemon', serif;
-    font-size: 2.5em;
-    font-style: normal;
+    font-size: 2.5rem;
     color: var(--laranja-claro);
-    text-align: center; /* Centralizando o título */
     margin-bottom: 1.5rem;
+    text-align: center;
 }
 
 #modernismo-explicacao p {
-    line-height: 1.8; /* Melhorando a legibilidade do texto */
+    line-height: 1.8;
     color: #555;
+    font-size: 1.1rem;
 }
 
 /* Estilos para a seção de Artistas */
 #artistas {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    background-color: #f8f9fa; /* Um fundo levemente cinza */
+    background-color: #f2f2f2; /* Cor de fundo para a seção */
 }
 
 #artistas h2 {
     font-family: 'Lemon', serif;
-    font-size: 2.5em;
-    font-style: normal;
+    font-size: 2.5rem;
     color: var(--laranja-claro);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+#artistas .row {
+    justify-content: center;
+}
+
+#artistas .col-md-4 {
     text-align: center;
     margin-bottom: 2rem;
 }
 
-#artistas .row {
-    justify-content: center; /* Centralizar os artistas */
-}
-
-#artistas .col-md-4 {
-    margin-bottom: 2rem; /* Espaçamento entre os artistas */
-}
-
 #artistas img {
-    border-radius: 50%; /* Deixar os retratos circulares */
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 50%;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
     max-width: 150px;
     height: auto;
+    margin-bottom: 0.5rem;
 }
 
 #artistas p {
     font-weight: bold;
     color: #333;
     margin-top: 0.5rem;
-    text-align: center;
 }
 
 /* Estilos para a seção da Galeria */
 #galeria {
     background-color: #FAF4F4;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
 }
 
 #galeria h2 {
     font-family: 'Lemon', serif;
-    font-size: 2.5em;
-    font-style: normal;
+    font-size: 2.5rem;
     color: var(--laranja-claro);
-    text-align: center;
     margin-bottom: 2rem;
-}
-
-.fundo-galeria {
-    background-image: url('img/flor-bottom-direita.png');
-    background-repeat: no-repeat;
-    background-position: bottom right;
-    background-size: 150px;
-    padding: 2rem; /* Adicionando um pouco de padding interno */
-    border-radius: 10px;
+    text-align: center;
 }
 
 #galeria .row {
-    justify-content: center; /* Centralizar as obras */
+    justify-content: center;
 }
 
 #galeria .col-md-4 {
+    text-align: center;
     margin-bottom: 2rem;
-    text-align: center; /* Centralizar as imagens e textos das obras */
 }
 
 #galeria img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
     margin-bottom: 0.5rem;
 }
 
@@ -222,70 +182,65 @@ section {
 
 /* Estilos para a seção de Contato */
 #contato {
-    background-image: url('img/4965007.jpg');
-    background-size: cover;
-    background-position: center;
-    padding: 5rem 0; /* Aumentando um pouco o padding vertical */
-    display: flex;
-    justify-content: center; /* Centralizar o conteúdo */
-    align-items: center; /* Alinhar verticalmente */
+    background-color: #f8f9fa; /* Cor de fundo para a seção */
+    padding: 4rem 0;
 }
 
-.formulario {
-    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco semi-transparente */
-    padding: 3rem; /* Aumentando o padding interno */
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra mais pronunciada */
-    font-weight: bold;
-    max-width: 600px; /* Limitando a largura máxima do formulário */
-    width: 90%; /* Ocupar 90% da largura em telas menores */
+#contato .container {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
-.formulario h2 {
+#contato h2 {
     font-family: 'Lemon', serif;
-    font-size: 2.5em;
+    font-size: 2.5rem;
     color: var(--laranja-claro);
+    margin-bottom: 2rem;
     text-align: center;
-    margin-bottom: 1.5rem;
 }
 
 .formulario label {
     display: block;
     margin-bottom: 0.5rem;
+    font-weight: bold;
     color: #333;
 }
 
 .formulario .form-control {
-    background-color: #F1EDEF;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    width: 100%;
     padding: 0.75rem;
     margin-bottom: 1.5rem;
-    width: 100%; /* Ocupar toda a largura do contêiner */
-    box-sizing: border-box; /* Para que o padding não aumente a largura total */
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    box-sizing: border-box;
+    background-color: #f8f9fa;
 }
 
-.formulario button {
-    background-color: #CB6D43;
+.formulario button[type="submit"] {
+    background-color: var(--laranja-claro);
     color: white;
     border: none;
-    padding: 1em 2em;
-    border-radius: 30px;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.25rem;
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    width: 100%; /* Botão ocupar toda a largura */
+    width: 100%;
 }
 
-.formulario button:hover {
-    background-color: #B05B37; /* Tom mais escuro no hover */
+.formulario button[type="submit"]:hover {
+    background-color: #E67724;
 }
 
 /* Estilos para o menu de acessibilidade */
 .menu-acessibilidade {
     position: fixed;
-    top: 2rem;
-    right: 20px;
+    top: 1rem;
+    right: 1rem;
     z-index: 1000;
 }
 
@@ -296,20 +251,20 @@ section {
 }
 
 .opcoes-acessibilidade {
-    margin-top: 10px;
+    margin-top: 0.5rem;
     display: flex;
     flex-direction: column;
 }
 
 .opcoes-acessibilidade button {
-    margin-bottom: 5px;
+    margin-bottom: 0.3rem;
     background-color: var(--laranja-claro);
     color: white;
     border: none;
-    padding: 0.5rem 1rem;
+    padding: 0.4rem 0.8rem;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     transition: background-color 0.3s ease;
 }
 
@@ -325,45 +280,43 @@ section {
 footer {
     background-color: #f8f9fa;
     text-align: center;
-    padding: 2rem 0;
+    padding: 1.5rem 0;
     font-size: 0.9rem;
     color: #777;
-    border-top: 1px solid #eee; /* Adicionando uma linha superior */
+    border-top: 1px solid #eee;
+    margin-top: 2rem;
 }
 
 footer p {
-    margin-bottom: 0; /* Removendo a margem padrão do parágrafo */
+    margin-bottom: 0;
 }
 
 /* Estilos responsivos */
 @media (max-width: 768px) {
     #inicio {
-        height: auto;
-        border-radius: 40px;
-        padding: 20px;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
     }
 
-    .img-inicio {
-        position: static;
-        width: 80%;
-        top: auto;
-        transform: translateY(0);
-        margin-top: 2rem;
-    }
-
-    .display-4 {
+    .display-5 {
         font-size: 2.5rem;
-        text-shadow: -2px 2px var(--laranja-claro);
     }
 
-    #tropicalia, #galeria {
-        background-size: 100px;
+    .fs-4 {
+        font-size: 1rem;
     }
 
-    .formulario {
+    #modernismo-explicacao .container,
+    #artistas .container,
+    #galeria .container,
+    #contato .container {
         padding: 1.5rem;
+    }
+
+    #modernismo-explicacao h2,
+    #artistas h2,
+    #galeria h2,
+    #contato h2 {
+        font-size: 2rem;
     }
 }
