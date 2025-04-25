@@ -201,7 +201,7 @@ section {
     max-width: 900px;
     margin: 0 auto;
     padding: 2rem;
-    background-color: #f5910e;
+    background-image: url('img/fundo.jpg');
     border-radius: 20px;jj
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
