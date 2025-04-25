@@ -1,0 +1,60 @@
+:root {
+    --cor-principal: #E8D8C3;
+    --cor-secundaria: #CB6D43;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background-color: #1D1D1D;
+}
+
+.nav-link {
+    color: var(--cor-secundaria);
+    font-weight: 600;
+}
+
+.inicio-fundo {
+    background-image: url('img/daisy-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    padding: 40px;
+    margin: 0 auto;
+    height: 500px;
+}
+
+.img-inicio {
+    position: absolute;
+    right: 0;
+    top: 10rem;
+    width: 35rem;
+}
+
+#galeria {
+    background-color: #F0F0F0;
+}
+
+#contato {
+    background-color: #1D1D1D;
+    padding: 4rem 0;
+}
+
+.formulario {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.formulario button {
+    background-color: var(--cor-secundaria);
+    border: none;
+    font-weight: bold;
+}
+
+.form-control {
+    background-color: #F1EDEF;
+}
