@@ -193,7 +193,8 @@ section {
 
 /* Estilos para a seção de Contato */
 #contato {
-    background-color: #f8f9fa; /* Cor de fundo para a seção */
+    background-color: url('img/fundo.jpg'); /* Substitua pelo nome do seu arquivo de imagem */
+    ; /* Cor de fundo para a seção */
     padding: 2rem 0;
 }
 
