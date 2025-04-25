@@ -44,7 +44,7 @@ section {
 
 /* Estilos para a seção de Início */
 #inicio {
-    background-image: url('img/sua_imagem_modernista.png'); /* Substitua pelo nome do seu arquivo de imagem */
+    background-image: url('img/fundo.jpg'); /* Substitua pelo nome do seu arquivo de imagem */
     background-size: cover; /* Cobrir todo o espaço da seção */
     background-position: center; /* Centralizar a imagem */
     color: white; /* Cor padrão do texto dentro da seção (pode ser sobrescrita) */
