@@ -63,7 +63,7 @@ section {
     font-family: 'Lemon', serif; /* Mantendo a fonte Lemon */
     font-size: 3.5rem; /* Ajustando o tamanho da fonte do título */
     color: var(--laranja-claro); /* Definindo a cor do título como laranja */
-    text-shadow: -2px 2px #333; /* Adicionando uma sombra sutil para legibilidade */
+    text-shadow: -2px 2px #bb4d04; /* Adicionando uma sombra sutil para legibilidade */
     margin-bottom: 1rem; /* Espaçamento abaixo do título */
     line-height: 1.2;
     background-color: rgba(255, 255, 255, 0.973); /* Adicionando uma camada semi-transparente opcional para melhorar a legibilidade do texto sobre a imagem */
