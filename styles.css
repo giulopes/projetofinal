@@ -118,7 +118,6 @@ section {
 #modernismo-explicacao p {
     line-height: 1.8;
     color: #555;
-    /* A linha font-size: 1.1rem; foi removida para permitir a herança do body */
 }
 
 /* Estilos para a seção de Artistas */
