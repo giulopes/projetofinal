@@ -1,5 +1,3 @@
-/* script.js */
-
 document.addEventListener('DOMContentLoaded', function () {
     // Menu de acessibilidade
     const botaoDeAcessibilidade = document.getElementById('botao-acessibilidade');
