@@ -83,7 +83,7 @@ section {
 
 .btn-primary {
     background-color: var(--laranja-claro);
-    color: rgb(0, 0, 0); /* Mantendo a cor do texto do botão como branco */
+    color: rgb(255, 255, 255); /* Mantendo a cor do texto do botão como branco */
     border: none;
     padding: 1rem 2rem;
     border-radius: 30px;
