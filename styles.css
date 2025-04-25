@@ -72,14 +72,15 @@ section {
 }
 
 .fs-4 {
-    color: white; /* Mantendo a cor do parágrafo como branco (ajuste se necessário) */
-    margin-bottom: 2rem; /* Espaçamento abaixo do parágrafo */
-    font-size: 1.2rem;
-    font-weight: 400;
-    background-color: rgba(255, 255, 255, 0.1); /* Adicionando uma camada semi-transparente opcional para melhorar a legibilidade do texto sobre a imagem */
-    padding: 0.5rem; /* Adicionando um pouco de padding ao redor do parágrafo */
-    border-radius: 5px; /* Adicionando um pequeno arredondamento opcional */
-}
+    color: black; /* Nova cor do texto: preto */
+    margin-bottom: 2rem; /* Mantendo o espaçamento abaixo */
+    font-size: 1.2rem; /* Mantendo o tamanho da fonte */
+    font-weight: 400; /* Mantendo a espessura da fonte */
+    background-color: rgba(255, 255, 255, 0.1); /* Mantendo o fundo semi-transparente (remova se não quiser) */
+    padding: 0.5rem; /* Mantendo o padding */
+    border-radius: 5px; /* Mantendo o arredondamento da borda */
+    text-align: center; /* Adicionando a centralização do texto */
+    }
 
 .btn-primary {
     background-color: var(--laranja-claro);
