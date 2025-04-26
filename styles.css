@@ -143,10 +143,11 @@ section {
 }
 
 #artistas img {
+    width: 150px; /* Define uma largura fixa */
+    height: 150px; /* Define uma altura fixa */
     border-radius: 50%;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-    max-width: 150px;
-    height: auto;
+    object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer muito */
     margin-bottom: 0.5rem;
 }
 
@@ -183,14 +184,6 @@ section {
     height: 200px;
     border-radius: 8px;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-    margin-bottom: 0.5rem;
-}
-
-#artistas img {
-    border-radius: 50%;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-    max-width: 150px;
-    height: auto;
     margin-bottom: 0.5rem;
 }
 
