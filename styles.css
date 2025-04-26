@@ -143,11 +143,11 @@ section {
 }
 
 #artistas img {
-    width: 150px; /* Define uma largura fixa */
-    height: 150px; /* Define uma altura fixa */
+    width: 150px !important;
+    height: 150px !important;
     border-radius: 50%;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-    object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer muito */
+    object-fit: cover;
     margin-bottom: 0.5rem;
 }
 
